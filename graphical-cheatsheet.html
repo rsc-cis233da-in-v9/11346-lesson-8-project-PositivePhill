@@ -40,7 +40,8 @@
 </nav> <!-- end nav tag-->
 </section>
 <main> <!--  Main content goes here -->
-<section>
+
+<section> <!-- graphic graphic effects section begins-->
 <h2>Graphic Effects</h2> <!--h2 header for graphic effects-->
 <table> <!-- table start for 18 possible values-->
 <thead> <!-- table header -->
@@ -124,6 +125,110 @@
 </tr>
 </tbody>
 </table> <!-- end table tag-->
+</section>
+
+<section> <!-- Media Elements section start -->
+  
+<h2>Media Elements</h2> <!-- heading for media elements section -->
+<table> <!-- Media elements table starts -->
+<thead> <!-- table header -->
+<tr>
+<th>Media Category</th> <!-- table categories-->
+<th>HTML Elements</th>
+<th>Important Attributes</th>
+</tr>
+</thead>
+<tbody> <!-- Figures row  -->
+<tr>
+<td>Figures</td>
+<td>
+<code>&lt;figure&gt;</code>,
+<code>&lt;figcaption&gt;</code>,
+<code>&lt;img&gt;</code>,
+<code>&lt;video&gt;</code>,
+<code>&lt;audio&gt;</code>,
+<code>&lt;picture&gt;</code>,
+<code>&lt;canvas&gt;</code>
+</td>
+<td> <!-- List attributes for each figure child -->
+<ul>
+<li><code>&lt;img&gt;</code>: <strong>src</strong>, <strong>alt</strong>, width, height</li>
+<li><code>&lt;video&gt;</code>: src, poster, controls, width, height</li>
+<li><code>&lt;audio&gt;</code>: src, controls</li>
+<li><code>&lt;figcaption&gt;</code>: (caption text)</li>
+</ul>
+</td>
+</tr> 
+<tr> <!-- Pictures row  -->
+<td>Pictures</td>
+<td>
+<code>&lt;picture&gt;</code>,
+<code>&lt;img&gt;</code>,
+<code>&lt;source&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;img&gt;</code>: <strong>src</strong>, <strong>alt</strong>, width, height</li>
+<li><code>&lt;source&gt;</code>: srcset, media, type</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- Audio row -->
+<td>Audio</td> 
+<td>
+<code>&lt;audio&gt;</code>,
+<code>&lt;source&gt;</code>,
+<code>&lt;track&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;audio&gt;</code>: src, controls, autoplay, loop</li>
+<li><code>&lt;source&gt;</code>: src, type</li>
+<li><code>&lt;track&gt;</code>: kind, src, srclang, label, default</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- Video row -->
+<td>Video</td>
+<td>
+<code>&lt;video&gt;</code>,
+<code>&lt;source&gt;</code>,
+<code>&lt;track&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;video&gt;</code>: src, controls, autoplay, loop, poster, width, height</li>
+<li><code>&lt;source&gt;</code>: src, type</li>
+<li><code>&lt;track&gt;</code>: kind, src, srclang, label, default</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- canvas row -->
+<td>Canvas</td>
+<td>
+<code>&lt;canvas&gt;</code>
+</td>
+<td>width, height, id (for JS), fallback content</td>
+</tr>
+<tr> <!-- other digital row -->
+<td>Other Digital Media</td>
+<td>
+<code>&lt;embed&gt;</code>,
+<code>&lt;object&gt;</code>,
+<code>&lt;iframe&gt;</code>,
+<code>&lt;svg&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;embed&gt;</code>: src, type, width, height</li>
+<li><code>&lt;object&gt;</code>: data, type, width, height</li>
+<li><code>&lt;iframe&gt;</code>: src, width, height, title, allow, allowfullscreen</li>
+<li><code>&lt;svg&gt;</code>: width, height, viewBox</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> <!-- Media elements cheatsheet table ends -->
 </section>
 </main> <!-- end main content-->      
 </html> <!-- end html page-->
