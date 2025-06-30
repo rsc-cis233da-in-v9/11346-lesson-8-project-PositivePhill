@@ -110,3 +110,46 @@ main h2,
 main h3 {
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
+/* Cheatsheet Table Styles */
+
+/* 1. Border, collapse borders, alt row background, and cell padding */
+table {
+  width: 100%;
+  border: 2px solid #223b70; /* Solid border around table */
+  border-collapse: collapse; /* Collapse borders between cells */
+  margin: 1.5em 0;
+  background: #fafbfc;
+}
+
+/* 2. Table cell padding (whitespace) */
+th, td {
+  padding: 0.83em 1.1em;
+  text-align: left;
+  font-size: 1em;
+}
+
+/* 3. Alternate row background color */
+tbody tr:nth-child(even) {
+  background: #e3e8ee;
+}
+
+/* 4. Table header row */
+thead tr th {
+  background: #223b70;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1976d2;
+  font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* 5. Properties and values in code: distinct monospace font */
+td code, th code {
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  background: #ede7f6;
+  color: #4b3869;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 1em;
+}
