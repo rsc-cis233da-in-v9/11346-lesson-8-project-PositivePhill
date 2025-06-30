@@ -1,0 +1,234 @@
+<!DOCTYPE html> <!--declare doc type HTML-->
+<html lang="en"> <!-- language english-->
+<head> <!-- head tag start-->
+<meta charset="UTF-8"> <!-- character encoding -->
+<title>Lesson 8 Project</title> <!-- page title -->
+<meta name="author" content="Phillip Mattern"> <!-- author metadata -->
+<meta name="description" content="Lesson 8 Project homepage for CIS233DA web practice."> <!-- page description -->
+<meta name="keywords" content="CIS233DA, Lesson 8, HTML, CSS, project, web development, cheatsheet, practice"> <!-- keywords for search engines -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport for responsive design -->
+  <!-- Google Material Icons CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- link to Google Material Icons stylesheet -->
+<link rel="stylesheet" href="css/style.css"> <!-- external link custom stylesheet -->
+</head> <!--end head tag-->
+<body> <!--body tag start-->
+<header> <!-- header section of the page -->
+<h1>Lesson 8 Project</h1> <!-- main heading for the project -->
+<div> <!-- div tag and grouping element for author info -->
+<p><strong>Name:</strong> Phillip Mattern</p> <!-- paragraph and strong tag-->
+<p><strong>GitHub Username:</strong> PositivePhill</p>
+<p><strong>Date:</strong> July 29, 2025</p>
+</div><!-- end div tag-->
+</header><!--end header tag-->
+
+<section aria-label="Site Navigation"> <!-- navigation section -->
+<nav> <!-- start nav tag -->
+<ul> <!-- unordered list tag-->
+<li> <!-- list tag-->
+<a href="index.html"> <!-- Home link with home icon -->
+<span class="material-icons" aria-hidden="true">home</span>Home</a>
+</li>
+<li> 
+<a href="graphical-cheatsheet.html"> <!-- Cheatsheet link with assignment icon -->
+<span class="material-icons" aria-hidden="true">assignment</span>Cheatsheet</a>
+</li>
+<li>
+<a href="https://friendly-meme-8jvrw91.pages.github.io/index.html"> <!-- Practice Activities link with code icon -->
+<span class="material-icons" aria-hidden="true">code</span>Practice Activities</a>
+</li>
+</ul>
+</nav> <!-- end nav tag-->
+</section>
+<main> <!--  Main content goes here -->
+
+<section> <!-- graphic graphic effects section begins-->
+<h2>Graphic Effects</h2> <!--h2 header for graphic effects-->
+<table> <!-- table start for 18 possible values-->
+<thead> <!-- table header -->
+<tr> <!-- table row -->
+<th>Property</th> <!--table header cells-->
+<th>Potential Values</th> <!--table header cells -->
+</tr> <!-- table row end-->
+</thead> <!-- end table header-->
+<tbody> <!-- table body tag start-->
+<tr> <!-- table row -->
+<td><code>filter</code></td> <!--  data cell with code tag-->
+<td>blur(), brightness(), contrast(), drop-shadow(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), sepia(), none, url()</td>
+</tr>
+<tr>
+<td><code>backdrop-filter</code></td>
+<td>Same as <code>filter</code> values</td>
+</tr>
+<tr>
+<td><code>mix-blend-mode</code></td>
+<td>normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity</td>
+</tr>
+<tr>
+<td><code>background-blend-mode</code></td>
+<td>Same as <code>mix-blend-mode</code> values</td>
+</tr>
+<tr>
+<td><code>clip-path</code></td>
+<td>circle(), ellipse(), inset(), polygon(), path(), url(), none</td>
+</tr>
+<tr>
+<td><code>clip</code></td>
+<td>rect(), auto (deprecated; use <code>clip-path</code>)</td>
+</tr>
+<tr>
+<td><code>mask</code></td>
+<td>url(), none, border-box, content-box, padding-box, etc.</td>
+</tr>
+<tr>
+<td><code>mask-image</code></td>
+<td>url(), none, linear-gradient(), radial-gradient()</td>
+</tr>
+<tr>
+<td><code>mask-mode</code></td>
+<td>alpha, luminance, match-source</td>
+</tr>
+<tr>
+<td><code>mask-repeat</code></td>
+<td>repeat, repeat-x, repeat-y, no-repeat, space, round</td>
+</tr>
+<tr>
+<td><code>mask-position</code></td>
+<td>left, right, top, bottom, center, or length/percentage</td>
+</tr>
+<tr>
+<td><code>mask-size</code></td>
+<td>auto, cover, contain, length, percentage</td>
+</tr>
+<tr>
+<td><code>mask-origin</code></td>
+<td>border-box, padding-box, content-box</td>
+</tr>
+<tr>
+<td><code>mask-clip</code></td>
+<td>border-box, padding-box, content-box, no-clip</td>
+</tr>
+<tr>
+<td><code>mask-composite</code></td>
+<td>add, subtract, intersect, exclude</td>
+</tr>
+<tr>
+<td><code>mask-type</code></td>
+<td>alpha, luminance</td>
+</tr>
+<tr>
+<td><code>isolation</code></td>
+<td>auto, isolate</td>
+</tr>
+<tr>
+<td><code>will-change</code></td>
+<td>filter, opacity, transform, scroll-position, contents, etc.</td>
+</tr>
+</tbody>
+</table> <!-- end table tag-->
+</section>
+
+<section> <!-- Media Elements section start -->
+  
+<h2>Media Elements</h2> <!-- heading for media elements section -->
+<table> <!-- Media elements table starts -->
+<thead> <!-- table header -->
+<tr>
+<th>Media Category</th> <!-- table categories-->
+<th>HTML Elements</th>
+<th>Important Attributes</th>
+</tr>
+</thead>
+<tbody> <!-- Figures row  -->
+<tr>
+<td>Figures</td>
+<td>
+<code>&lt;figure&gt;</code>,
+<code>&lt;figcaption&gt;</code>,
+<code>&lt;img&gt;</code>,
+<code>&lt;video&gt;</code>,
+<code>&lt;audio&gt;</code>,
+<code>&lt;picture&gt;</code>,
+<code>&lt;canvas&gt;</code>
+</td>
+<td> <!-- List attributes for each figure child -->
+<ul>
+<li><code>&lt;img&gt;</code>: <strong>src</strong>, <strong>alt</strong>, width, height</li>
+<li><code>&lt;video&gt;</code>: src, poster, controls, width, height</li>
+<li><code>&lt;audio&gt;</code>: src, controls</li>
+<li><code>&lt;figcaption&gt;</code>: (caption text)</li>
+</ul>
+</td>
+</tr> 
+<tr> <!-- Pictures row  -->
+<td>Pictures</td>
+<td>
+<code>&lt;picture&gt;</code>,
+<code>&lt;img&gt;</code>,
+<code>&lt;source&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;img&gt;</code>: <strong>src</strong>, <strong>alt</strong>, width, height</li>
+<li><code>&lt;source&gt;</code>: srcset, media, type</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- Audio row -->
+<td>Audio</td> 
+<td>
+<code>&lt;audio&gt;</code>,
+<code>&lt;source&gt;</code>,
+<code>&lt;track&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;audio&gt;</code>: src, controls, autoplay, loop</li>
+<li><code>&lt;source&gt;</code>: src, type</li>
+<li><code>&lt;track&gt;</code>: kind, src, srclang, label, default</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- Video row -->
+<td>Video</td>
+<td>
+<code>&lt;video&gt;</code>,
+<code>&lt;source&gt;</code>,
+<code>&lt;track&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;video&gt;</code>: src, controls, autoplay, loop, poster, width, height</li>
+<li><code>&lt;source&gt;</code>: src, type</li>
+<li><code>&lt;track&gt;</code>: kind, src, srclang, label, default</li>
+</ul>
+</td>
+</tr>
+<tr> <!-- canvas row -->
+<td>Canvas</td>
+<td>
+<code>&lt;canvas&gt;</code>
+</td>
+<td>width, height, id (for JS), fallback content</td>
+</tr>
+<tr> <!-- other digital row -->
+<td>Other Digital Media</td>
+<td>
+<code>&lt;embed&gt;</code>,
+<code>&lt;object&gt;</code>,
+<code>&lt;iframe&gt;</code>,
+<code>&lt;svg&gt;</code>
+</td>
+<td>
+<ul>
+<li><code>&lt;embed&gt;</code>: src, type, width, height</li>
+<li><code>&lt;object&gt;</code>: data, type, width, height</li>
+<li><code>&lt;iframe&gt;</code>: src, width, height, title, allow, allowfullscreen</li>
+<li><code>&lt;svg&gt;</code>: width, height, viewBox</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> <!-- Media elements cheatsheet table ends -->
+</section>
+</main> <!-- end main content-->      
+</html> <!-- end html page-->

@@ -1,0 +1,155 @@
+/* phillip Mattern
+   CIS233DA 11346
+*/
+
+/* 1. Body background, text color, font, full height, grid layout */
+body {
+  margin: 0;
+  min-height: 100vh;               /* Full viewport height */
+  height: 100vh;
+  background: #f6f8fa;             /* Light background */
+  color: #222845;                  /* Main text color */
+  font-family: 'Roboto', Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "nav header"
+    "nav main";
+}
+
+/* 2. Navigation Section sidebar */
+section[aria-label="Site Navigation"] {
+  grid-area: nav; 
+  background: linear-gradient(180deg, #223b70 0%, #3468b4 100%); /* Gradient background */
+  color: #fff;                        /* Legible text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;            /* Vertical center */
+  align-items: stretch;
+  min-width: 180px;                   /* Wide enough for single-line links */
+  height: 100vh;                      /* Full height */
+}
+
+/* 3. Navigation link vertical column, spacing, full width, borders, no underline */
+section[aria-label="Site Navigation"] nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;                        /* White space between links */
+}
+
+section[aria-label="Site Navigation"] nav a {
+  display: flex;
+  align-items: center;
+  width: 100%;                        /* Full width of section */
+  padding: 0.9rem 1.4rem;
+  color: inherit;                     /* Inherit nav section color */
+  background: transparent;
+  border-top: 2px solid #fafafa;      /* Top border */
+  border-bottom: 2px solid #fafafa;   /* Bottom border */
+  text-decoration: none;              /* Remove underline */
+  font-size: 1.13rem;
+  font-weight: 500;
+  transition: background 0.25s, color 0.2s;
+}
+
+/* 4. Hover state for links gradient and text color */
+section[aria-label="Site Navigation"] nav a:hover,
+section[aria-label="Site Navigation"] nav a:focus {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fffde7;
+  outline: none;
+}
+
+/* 5. Header Styles */
+/* Grid area, gradient background, flex layout with heading left and grouping right */
+header {
+  grid-area: header;
+  background: linear-gradient(90deg, #1976d2 0%, #90caf9 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: row;        /* Row direction: heading left, group right */
+  align-items: center;        /* Vertically center */
+  justify-content: space-between;
+  padding: 0 2rem;
+  min-height: 0;
+}
+
+/* Heading font for header */
+header h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.2rem;
+  margin: 0.7em 0 0.7em 0;
+  letter-spacing: 0.04em;
+}
+
+/* Grouping element (author info, etc.) to the right */
+header div {
+  font-size: 1rem;
+  color: #f9f9f9;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: right;
+}
+
+/* 6. Main element styles */
+/* Whitespace in main, headings get heading font */
+main {
+  grid-area: main;
+  padding: 2.2rem 2.8rem 2.2rem 2.2rem; /* Whitespace around content */
+  background: #fff;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Headings in main use the heading font */
+main h1,
+main h2,
+main h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Cheatsheet Table Styles */
+
+/* 1. Border, collapse borders, alt row background, and cell padding */
+table {
+  width: 100%;
+  border: 2px solid #223b70; /* Solid border around table */
+  border-collapse: collapse; /* Collapse borders between cells */
+  margin: 1.5em 0;
+  background: #fafbfc;
+}
+
+/* 2. Table cell padding (whitespace) */
+th, td {
+  padding: 0.83em 1.1em;
+  text-align: left;
+  font-size: 1em;
+}
+
+/* 3. Alternate row background color */
+tbody tr:nth-child(even) {
+  background: #e3e8ee;
+}
+
+/* 4. Table header row */
+thead tr th {
+  background: #223b70;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1976d2;
+  font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* 5. Properties and values in code: distinct monospace font */
+td code, th code {
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  background: #ede7f6;
+  color: #4b3869;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 1em;
+}
