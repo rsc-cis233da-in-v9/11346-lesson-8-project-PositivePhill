@@ -63,3 +63,50 @@ section[aria-label="Site Navigation"] nav a:focus {
   color: #fffde7;
   outline: none;
 }
+
+/* 5. Header Styles */
+/* Grid area, gradient background, flex layout with heading left and grouping right */
+header {
+  grid-area: header;
+  background: linear-gradient(90deg, #1976d2 0%, #90caf9 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: row;        /* Row direction: heading left, group right */
+  align-items: center;        /* Vertically center */
+  justify-content: space-between;
+  padding: 0 2rem;
+  min-height: 0;
+}
+
+/* Heading font for header */
+header h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.2rem;
+  margin: 0.7em 0 0.7em 0;
+  letter-spacing: 0.04em;
+}
+
+/* Grouping element (author info, etc.) to the right */
+header div {
+  font-size: 1rem;
+  color: #f9f9f9;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: right;
+}
+
+/* 6. Main element styles */
+/* Whitespace in main, headings get heading font */
+main {
+  grid-area: main;
+  padding: 2.2rem 2.8rem 2.2rem 2.2rem; /* Whitespace around content */
+  background: #fff;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Headings in main use the heading font */
+main h1,
+main h2,
+main h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
