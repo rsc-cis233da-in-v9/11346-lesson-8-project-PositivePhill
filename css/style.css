@@ -1,0 +1,65 @@
+/* phillip Mattern
+   CIS233DA 11346
+*/
+
+/* 1. Body background, text color, font, full height, grid layout */
+body {
+  margin: 0;
+  min-height: 100vh;               /* Full viewport height */
+  height: 100vh;
+  background: #f6f8fa;             /* Light background */
+  color: #222845;                  /* Main text color */
+  font-family: 'Roboto', Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "nav header"
+    "nav main";
+}
+
+/* 2. Navigation Section sidebar */
+section[aria-label="Site Navigation"] {
+  grid-area: nav; 
+  background: linear-gradient(180deg, #223b70 0%, #3468b4 100%); /* Gradient background */
+  color: #fff;                        /* Legible text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;            /* Vertical center */
+  align-items: stretch;
+  min-width: 180px;                   /* Wide enough for single-line links */
+  height: 100vh;                      /* Full height */
+}
+
+/* 3. Navigation link vertical column, spacing, full width, borders, no underline */
+section[aria-label="Site Navigation"] nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;                        /* White space between links */
+}
+
+section[aria-label="Site Navigation"] nav a {
+  display: flex;
+  align-items: center;
+  width: 100%;                        /* Full width of section */
+  padding: 0.9rem 1.4rem;
+  color: inherit;                     /* Inherit nav section color */
+  background: transparent;
+  border-top: 2px solid #fafafa;      /* Top border */
+  border-bottom: 2px solid #fafafa;   /* Bottom border */
+  text-decoration: none;              /* Remove underline */
+  font-size: 1.13rem;
+  font-weight: 500;
+  transition: background 0.25s, color 0.2s;
+}
+
+/* 4. Hover state for links gradient and text color */
+section[aria-label="Site Navigation"] nav a:hover,
+section[aria-label="Site Navigation"] nav a:focus {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fffde7;
+  outline: none;
+}
